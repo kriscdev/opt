@@ -1,2 +1,2 @@
-swupd bundle-add java-basic buildreq-spark 
+swupd bundle-add java-basic buildreq-spark R-extras
 Rscript -e "install.packages(c('rJava','sparklyr', 'IRkernel', 'tm', 'openNLP', 'RWeka', 'shiny', 'officer', 'rio', 'knitr', 'rmarkdown', 'devtools', 'testthat', 'e1071', 'survival', 'ggplot2', 'mplot', 'googleVis','glmnet', 'pROC', 'data.table', 'caret', 'sqldf', 'wordcloud'), repos='https://cloud.r-project.org/')"
