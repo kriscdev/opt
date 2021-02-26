@@ -1,0 +1,20 @@
+[Unit]
+Description=Spark
+After=syslog.target network.target network-online.target
+Requires=network-online.target
+
+[Service]
+User=${USER}
+Group=${USER}
+Type=forking
+ExecStart=/opt/spark/sbin/start-all.sh
+ExecStop=/opt/spark/sbin/stop-all.sh
+WorkingDirectory=$DEV_HOME
+Environment=JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk
+Environment=SPARK_HOME=$SPARK_HOME
+Environment=HADOOP_COMMON_HOME=$HADOOP_COMMON_HOME
+TimeoutStartSec=2min
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
