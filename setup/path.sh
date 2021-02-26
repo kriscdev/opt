@@ -1,5 +1,5 @@
 tee -a /etc/profile <<'EOF'
-export JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 export JAVA="$JAVA_HOME/bin/java"
 export JAVAC="$JAVA_HOME/bin/javac"
 export JAVAH="$JAVA_HOME/bin/javac -h"
