@@ -1,0 +1,16 @@
+[Unit]
+Description=Hadoop DFS namenode and datanode plus yarn resouce manager and node manager
+After=syslog.target network.target network-online.target
+Requires=network-online.target
+
+[Service]
+User=${USER}
+Group=${USER}
+Type=forking
+ExecStart=/opt/hadoop/sbin/start-all.sh
+ExecStop=/opt/hadoop/sbin/stop-all.sh
+WorkingDirectory=/opt
+Environment=JAVA_HOME=$JAVA_HOME
+Environment=HADOOP_COMMON_HOME=$HADOOP_COMMON_HOME
+TimeoutStartSec=2min
+Restart=on-failure
