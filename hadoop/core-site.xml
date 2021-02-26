@@ -1,7 +1,7 @@
 <configuration>
 	<property>
 		<name>fs.defaultFS</name>
-		<value>hdfs://msr:9820/</value>
+		<value>hdfs://rig.krisc.dev:9820/</value>
 		<description>NameNode URI</description>
 	</property>
 	<property>
