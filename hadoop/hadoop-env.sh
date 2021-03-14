@@ -1,7 +1,7 @@
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk
 export HADOOP_HOME=/opt/hadoop
 export HADOOP_LIBEXEC_DIR=/opt/hadoop/libexec
-export HADOOP_CONF_DIR=/opt/hadoop/etc/hadoop
+export HADOOP_CONF_DIR=/etc/hadoop
 export HDFS_NAMENODE_USER=root
 export HDFS_DATANODE_USER=root
 export HDFS_SECONDARYNAMENODE_USER=root
